@@ -10,7 +10,12 @@ let btn = document.getElementById("addTodoBtn");//btn
 
 function f(){
 	let newele = document.createElement("li");
-	if(newele!==""){
+	
+	if(newTodoInput.value===""){
+
+		return
+	}
+	else{
 	newele.textContent  = newTodoInput.value;
 	todoList.appendChild(newele)
 	}
